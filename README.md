@@ -1,30 +1,22 @@
 # ODD2023-Datascience-Ex-04
-# Aim
-To read the given data and perform the univariate analysis with different types of plots.
+# AIM 
+To perform Multivariate EDA on the given data set.
 
-# Explanation
-Univariate analysis is basically the simplest form to analyze data. Uni means one and this means that the data has only one kind of variable. The major reason for univariate analysis is to use the data to describe. The analysis will take data, summarise it, and then find some pattern in the data.
+# Explanation: 
+Exploratory data analysis is used to understand the messages within a dataset. This technique involves many iterative processes to ensure that the cleaned data is further sorted to better understand the useful meaning.The primary aim with exploratory analysis is to examine the data for distribution, outliers and anomalies to direct specific testing of your hypothesis. 
 
-# Algorithm :
-Step1
-Read the given data.
+# ALGORITHM:
 
-Step2
-Get the information about the data.
+## STEP 1 Import the built libraries required to perform EDA and outlier removal. 
+## STEP 2 Read the given csv file 
+## STEP 3 Convert the file into a dataframe and get information of the data. 
+## STEP 4 Return the objects containing counts of unique values using (value_counts()).
+## STEP 5 Plot the counts in the form of Histogram or Bar Graph.
+## STEP 6 Use seaborn the bar graph comparison of data can be viewed.
+## STEP 7 Find the pairwise correlation of all columns in the dataframe.corr() 
+## STEP 8 Save the final data set into the file 
 
-Step3
-Remove the null values from the data.
-
-Step4
-Mention the datatypes from the data.
-
-Step5
-Count the values from the data.
-
-Step6
-Do plots like boxplots,countplot,distribution plot,histogram plot.
-
-# Program:
+# PROGRAM
 ```
 import pandas as pd
 from scipy import stats
@@ -201,8 +193,8 @@ sns.heatmap(numeric_cols.corr(),annot = True)
 ```
 ![image](https://github.com/Vaish-1011/ODD2023-Datascience-Ex-04/assets/135130074/a82e88bc-70d2-4b91-b091-e2c41f9e13f6)
 
-# RESULT:
-Thus we have read the given data and performed the univariate analysis with different types of plots.
+# RESULT
+Thus we have read the given data and performed the multivariate analysis with different types of plots
 
 
 
